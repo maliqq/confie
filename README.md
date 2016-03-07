@@ -36,7 +36,7 @@ Settings.other_key # 3
 ```
 
 ## Files priority
-Lower file overrides values from previous
+Every next file overrides values from previous using deep merge
 * `#{Rails.root}/settings.yml`
 * `#{Rails.root}/settings.local.yml`
 * `#{Rails.root}/settings/#{Rails.env}.yml`
@@ -44,7 +44,7 @@ Lower file overrides values from previous
 
 ## Defining const
 
-To redefine config constant, for example `MyConfig`, create `my_config.rb` in your autoloaded directory
+To redefine settings constant, e.g. `MyConfig`, create `my_config.rb` in your autoloaded directory
 ```ruby
 # my_config.rb
 MyConfig = Confie.load!

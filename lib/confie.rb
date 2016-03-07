@@ -17,8 +17,8 @@ module Confie
     load files
   end
 
-  def extend!(mod)
-    mod.extend load!.to_module
+  def extend!(mod, name = 'settings')
+    mod.extend load!.to_module(name)
   end
 
   def load(files)

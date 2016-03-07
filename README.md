@@ -9,6 +9,10 @@ Minimalistic settings for your Rails application
 * reloads every time on `Object.send(:remove_const, :Settings)`
 * uses [Hashie::Mash](http://www.rubydoc.info/github/intridea/hashie/Hashie/Mash)
 
+## Installation
+
+Add `gem 'confie'` in your Gemfile
+
 ## Usage
 
 Accessing settings keys
